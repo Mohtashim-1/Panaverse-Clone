@@ -10,6 +10,7 @@ export default function Home() {
         <Hero />
         {/* CoreTrack Section */}
         <CoreTrack />
+        {/* Boxes Section */}
       </main>
     </>
   );

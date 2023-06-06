@@ -1,6 +1,7 @@
 import React from "react";
 import Wrapper from "../Shared/Wrapper";
 import Button from "../Shared/Button";
+import QuarterBox from "./QuarterBox";
 
 const CoreTrack = () => {
   const header = "Core Courses \n (Common in All Specializations):";
@@ -20,6 +21,28 @@ const CoreTrack = () => {
           <div className="mt-4">
             <Button text="Learn More" />
           </div>
+        </div>
+        {/* Boxes */}
+        <div className="flex gap-x-4">
+          <QuarterBox
+            heading={"Quarter I"}
+            description={"CS-101: Object-Oriented Programming using TypeScript"}
+            number={1}
+          />
+          <QuarterBox
+            heading={"Quarter II "}
+            description={
+              "W2-201: Developing Planet-Scale Web 2.0 Serverless Cloud Cloud Apps and APIs using Next.js 13 and Cloud Development Kit (CDK) for Terraform"
+            }
+            number={2}
+          />
+          <QuarterBox
+            heading={"Quarter III"}
+            description={
+              "$-101: Dollar Making Bootcamp - Full-Stack Template and API Product Development"
+            }
+            number={3}
+          />
         </div>
       </Wrapper>
     </section>
