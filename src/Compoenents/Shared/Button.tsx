@@ -3,7 +3,7 @@ import React, { FC } from "react";
 const Button: FC<{ text: string }> = ({ text }) => {
   return (
     <div>
-      <button className="px-4 py-4 mt-2 font-semibold text-white bg-teal-700 rounded-full ">
+      <button className="px-6 py-3 mt-2  text-white bg-[#00616C] rounded-full shadow-lg text-lg font-medium ">
         {text}
       </button>
     </div>

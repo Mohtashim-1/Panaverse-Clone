@@ -10,11 +10,11 @@ const Hero = () => {
         <div className="flex flex-col items-center md:flex-row">
           {/* Left Side */}
           <div className="flex-1">
-            <h4 className="text-lg font-semibold text-teal-800">
+            <h4 className="text-lg font-semibold text-[#00616C]">
               President Initiative for Artificial Intelligence and
               Computing(PIAIC)
             </h4>
-            <h1 className="sm: text-3xl leading-10 md:text-5xl text-blank font-bold leading-[60px] ">
+            <h1 className="sm: text-3xl md:text-5xl text-blank font-bold leading-[60px] ">
               Certified Web 3.0 and Metaverse Developer{" "}
             </h1>
             <p className="mt-6 text-lg text-slate-600">
