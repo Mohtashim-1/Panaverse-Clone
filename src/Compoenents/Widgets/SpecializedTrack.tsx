@@ -14,9 +14,9 @@ const SpecializedTrack = () => {
             After completing the first three quarters the participants will select <br /> one or more specializations consisting of two courses each:
           </p>
         </div>
-        <div className='mt-10 '>
+        <div className='mt-10 flex'>
           {/* Content Left */}
-          <div className='bg-white rounded-xl shadow-xl border border-slade-200 py-8 px-8'>
+          <div className='bg-white basis-8/12 rounded-xl shadow-xl border border-slade-200 py-8 px-8'>
             <h4 className='text-teal-600 text-lg'>Specialized Program</h4>
             <h3 className='text-2xl font-bold'>Web 3.0 (Blockchain) and Metaverse Specialization</h3>
             <p className='text-lg text-slate-600 mt-3'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt nemo aut repellat quas commodi omnis dolores, eveniet quam temporibus hic quo tempora sint praesentium magni consequatur dolore accusamus, qui unde!</p>
@@ -27,12 +27,21 @@ const SpecializedTrack = () => {
 
             </button>
             <div className='flex gap-4 mt-8'>
-              <QuarterBox description={"W2-201: Developing Planet-Scale Web 2.0 Serverless Cloud Cloud Apps and APIs using Next.js 13 and Cloud Development Kit (CDK) for Terraform"} header={"Quarter IV"} number={4} haveBorder={false} />
+              <QuarterBox description={"W2-201: Developing Planet-Scale Web 2.0 Serverless Cloud Cloud Apps and APIs using Next.js 13 and Cloud Development Kit (CDK) for Terraform"}
+                number={4}
+                header={"Quarter IV"}
+                haveBorder={false} />
 
-              <QuarterBox description={"W2-201: Developing Planet-Scale Web 2.0 Serverless Cloud Cloud Apps and APIs using Next.js 13 and Cloud Development Kit (CDK) for Terraform"} header={"Quarter V"} number={5} haveBorder={false} />
+              <QuarterBox description={"W2-201: Developing Planet-Scale Web 2.0 Serverless Cloud Cloud Apps and APIs using Next.js 13 and Cloud Development Kit (CDK) for Terraform"}
+                number={5}
+                header={"Quarter V"}
+                haveBorder={false} />
             </div>
           </div>
           {/* Content Right */}
+          <div className='px-4 basis-4/12 py-6 bg-slate-700'>
+
+          </div>
         </div>
       </Wrapper>
     </section>
