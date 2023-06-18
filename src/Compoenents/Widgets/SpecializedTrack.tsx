@@ -14,7 +14,7 @@ const SpecializedTrack = () => {
             After completing the first three quarters the participants will select <br /> one or more specializations consisting of two courses each:
           </p>
         </div>
-        <div className='mt-10 flex'>
+        <div className='mt-10 flex gap-x-4 gap-y-8'>
           {/* Content Left */}
           <div className='bg-white basis-8/12 rounded-xl shadow-xl border border-slade-200 py-8 px-8'>
             <h4 className='text-teal-600 text-lg'>Specialized Program</h4>
@@ -39,8 +39,12 @@ const SpecializedTrack = () => {
             </div>
           </div>
           {/* Content Right */}
-          <div className='px-4 basis-4/12 py-6 bg-slate-700'>
-
+          <div className='px-4 flex basis-4/12 py-6 bg-slate-100 gap-x-3'>
+            <div className='w-20 h-16 rounded bg-red-300'></div>
+            <div>
+              <h4 className=' text-primary'>Specialized Program</h4>
+              <h3>Web 3.0 (Blockchain) and Metaverse Specialization</h3>
+            </div>
           </div>
         </div>
       </Wrapper>
