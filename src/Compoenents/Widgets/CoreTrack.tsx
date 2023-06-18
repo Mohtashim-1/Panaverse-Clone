@@ -1,6 +1,7 @@
 import React from "react";
 import Wrapper from "@/Compoenents/Shared/Wrapper";
 import Button from "@/Compoenents/Shared/Button";
+import QuarterBox from "@/Compoenents/Shared/QuarterBox";
 // import QuarterBox from "@/Compoenents/Widgets/QuarterBox";
 const CoreTrackData = [
   {
@@ -41,19 +42,12 @@ const CoreTrack = () => {
           </div>
         </div>
         {/* Boxes */}
-        <div className=" my-20 flex gap-x-4 max-w-screen-xl ">
+        <div className=" my-20 flex flex-col md:flex-row gap-x-4 max-w-screen-xl ">
           {
             CoreTrackData.map((item, i) => {
-              // console.log(item.header);
               return (
-                // <div className="flex flex-1 my-20">
-                <div className="relative px-8 py-12 flex flex-col border rounded-md ">
-                  <h4 className="font-lg font-bold">{item.header}  </h4>
-                  <p className="mt-2 text-slate-600 z-0"> {item.description}</p>
-                  <span className="absolute top-0 font-bold text-gray-200 -z-10 right-10 text-7xl ">{item.number}
-                  </span>
-                </div>
-                // </div>
+                <QuarterBox description={item.description} header={item.header}
+                  number={i + 1} haveBorder={true} />
               );
             })
           }

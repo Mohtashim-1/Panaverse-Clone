@@ -13,9 +13,7 @@ export default function Home() {
         {/* CoreTrack Section */}
         <CoreTrack />
         {/* Specialized Track */}
-        {/* <SpecializedTrack /> */}
-        {/* Quarter Box */}
-        {/* <QuarterBox /> */}
+        <SpecializedTrack />
       </main>
     </>
   );

@@ -1,5 +1,6 @@
 import React from 'react'
 import Wrapper from '@/Compoenents/Shared/Wrapper'
+import QuarterBox from '../Shared/QuarterBox'
 
 const SpecializedTrack = () => {
   return (
@@ -25,6 +26,9 @@ const SpecializedTrack = () => {
               </svg>
 
             </button>
+            <div>
+              <QuarterBox description={ } header={ } number={ } haveBorder={false} />
+            </div>
           </div>
           {/* Content Right */}
         </div>
