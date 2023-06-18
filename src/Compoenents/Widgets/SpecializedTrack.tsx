@@ -39,7 +39,17 @@ const SpecializedTrack = () => {
             </div>
           </div>
           {/* Content Right */}
-          <div className=' bg-slate-100 px-4 py-6 basis-4/12'>
+
+          <div className=' bg-slate-100 px-4 py-6 basis-4/12 cursor-pointer'>
+            {/* Element 01 */}
+            <div className='flex  items-center gap-x-3'>
+              <div className='w-20 h-16 rounded bg-red-300 '></div>
+              <div>
+                <h4 className=' text-primary font-medium'>Specialized Program</h4>
+                <h3 className='text-xl font-semibold'>Web 3.0 (Blockchain) and Metaverse Specialization</h3>
+              </div>
+            </div>
+            {/* Element 02 */}
             <div className='flex  items-center gap-x-3'>
               <div className='w-20 h-16 rounded bg-red-300 '></div>
               <div>
@@ -49,6 +59,8 @@ const SpecializedTrack = () => {
             </div>
           </div>
         </div>
+
+
       </Wrapper>
     </section>
   )
