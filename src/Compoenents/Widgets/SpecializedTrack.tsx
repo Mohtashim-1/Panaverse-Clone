@@ -39,11 +39,13 @@ const SpecializedTrack = () => {
             </div>
           </div>
           {/* Content Right */}
-          <div className='px-4 flex basis-4/12 py-6 bg-slate-100 gap-x-3'>
-            <div className='w-20 h-16 rounded bg-red-300'></div>
-            <div>
-              <h4 className=' text-primary'>Specialized Program</h4>
-              <h3>Web 3.0 (Blockchain) and Metaverse Specialization</h3>
+          <div className=' bg-slate-100 px-4 py-6 basis-4/12'>
+            <div className='flex  items-center gap-x-3'>
+              <div className='w-20 h-16 rounded bg-red-300 '></div>
+              <div>
+                <h4 className=' text-primary font-medium'>Specialized Program</h4>
+                <h3 className='text-xl font-semibold'>Web 3.0 (Blockchain) and Metaverse Specialization</h3>
+              </div>
             </div>
           </div>
         </div>
