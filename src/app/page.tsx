@@ -15,7 +15,7 @@ export default function Home() {
         {/* Specialized Track */}
         <SpecializedTrack />
         {/* Quarter Box */}
-        <QuarterBox />
+        {/* <QuarterBox /> */}
       </main>
     </>
   );
