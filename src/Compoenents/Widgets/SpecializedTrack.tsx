@@ -26,8 +26,10 @@ const SpecializedTrack = () => {
               </svg>
 
             </button>
-            <div>
-              <QuarterBox description={ } header={ } number={ } haveBorder={false} />
+            <div className='flex gap-4 mt-8'>
+              <QuarterBox description={"W2-201: Developing Planet-Scale Web 2.0 Serverless Cloud Cloud Apps and APIs using Next.js 13 and Cloud Development Kit (CDK) for Terraform"} header={"Quarter IV"} number={4} haveBorder={false} />
+
+              <QuarterBox description={"W2-201: Developing Planet-Scale Web 2.0 Serverless Cloud Cloud Apps and APIs using Next.js 13 and Cloud Development Kit (CDK) for Terraform"} header={"Quarter V"} number={5} haveBorder={false} />
             </div>
           </div>
           {/* Content Right */}
