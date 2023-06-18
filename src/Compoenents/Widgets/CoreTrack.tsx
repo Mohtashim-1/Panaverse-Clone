@@ -1,7 +1,7 @@
 import React from "react";
 import Wrapper from "@/Compoenents/Shared/Wrapper";
 import Button from "@/Compoenents/Shared/Button";
-import QuarterBox from "@/Compoenents/Widgets/QuarterBox";
+// import QuarterBox from "@/Compoenents/Widgets/QuarterBox";
 const CoreTrackData = [
   {
     header: "Quarter I",
@@ -41,27 +41,25 @@ const CoreTrack = () => {
           </div>
         </div>
         {/* Boxes */}
-        <div className="flex gap-x-4">
-          <QuarterBox
-            heading={"Quarter I"}
-            description={"CS-101: Object-Oriented Programming using TypeScript"}
-            number={1}
-          />
+        <div className=" my-20 flex gap-x-4 max-w-screen-xl ">
+          {
+            CoreTrackData.map((item, i) => {
+              // console.log(item.header);
+              return (
+                // <div className="flex flex-1 my-20">
+                <div className="relative px-8 py-12 flex flex-col border rounded-md ">
+                  <h4 className="font-lg font-bold">{item.header}  </h4>
+                  <p className="mt-2 text-slate-600 z-0"> {item.description}</p>
+                  <span className="absolute top-0 font-bold text-gray-200 -z-10 right-10 text-7xl ">{item.number}
+                  </span>
+                </div>
+                // </div>
+              );
+            })
+          }
 
-          <QuarterBox
-            heading={"Quarter II "}
-            description={
-              "W2-201: Developing Planet-Scale Web 2.0 Serverless Cloud Cloud Apps and APIs using Next.js 13 and Cloud Development Kit (CDK) for Terraform"
-            }
-            number={2}
-          />
-          <QuarterBox
-            heading={"Quarter III"}
-            description={
-              "$-101: Dollar Making Bootcamp - Full-Stack Template and API Product Development"
-            }
-            number={3}
-          />
+
+
         </div>
       </Wrapper>
     </section>
