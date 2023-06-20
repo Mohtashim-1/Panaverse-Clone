@@ -50,6 +50,7 @@ const CoreTrack = () => {
                   key={item.number}
                   description={item.description} header={item.header}
                   number={i + 1} haveBorder={true} />
+
               );
             })
           }
