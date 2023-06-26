@@ -1,11 +1,14 @@
 import React from 'react'
 import Wrapper from '@/Compoenents/Shared/Wrapper'
 import QuarterBox from '../Shared/QuarterBox'
+import Web3 from "@/Compoenents/Asset/Web3.png"
+import AI from "@/Compoenents/Asset/ai.png"
 
 export const programsData = [
   {
     header: "Web 3.0 (Blockchain) and Metaverse Specialization",
     description: "This Web 3.0 and Metaverse specialization focuses on developing full-stack Web 3.0 and Metaverse experiences for the next generation of the internet by specializing in building worlds that merge the best of cutting-edge decentralized distributed blockchains with 3D metaverse client experiences.",
+    image: Web3,
     quarters: [
       {
         header: "Quarter IV",
@@ -20,6 +23,7 @@ export const programsData = [
   }, {
     header: "Artificial Intelligence (AI) and Deep Learning Specialization",
     description: "The AI and Deep Learning specialization focuses on building and deploying intelligent APIs using OpenAI models and building custom Deep Learning Tensorflow models.",
+    image: AI,
     quarters: [
       {
         header: "Quarter IV",
