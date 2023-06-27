@@ -3,6 +3,7 @@ import Wrapper from '@/Compoenents/Shared/Wrapper'
 import QuarterBox from '../Shared/QuarterBox'
 import Web3 from "@/Compoenents/Asset/Web3.png"
 import AI from "@/Compoenents/Asset/ai.png"
+import Image from 'next/image'
 
 export const programsData = [
   {
@@ -129,29 +130,35 @@ const SpecializedTrack = () => {
           </div>
           {/* Content Right */}
 
-          <div className=' bg-slate-100 px-4 py-6 basis-4/12 cursor-pointer'>
+          <div className=' bg-slate-100 px-4 space-y-5 py-6 basis-4/12 cursor-pointer'>
+            {
+              programsData.map((item, i) => (
+                <div key={i} className='flex  items-center gap-x-3'>
+                  {/* <div className='w-20 h-16 rounded bg-red-300 '></div> */}
+                  <Image src={item.image} alt={item.header} className={"h-24 object-cover rounded-md"} ></Image>
+                  <div>
+                    <h4 className=' text-primary font-medium'>Specialized Program</h4>
+                    <h3 className='text-xl font-semibold'>Web 3.0 (Blockchain) and Metaverse Specialization</h3>
+                  </div>
+                </div>
+              ))
+            }
             {/* Element 01 */}
-            <div className='flex  items-center gap-x-3'>
+            {/* <div className='flex  items-center gap-x-3'>
               <div className='w-20 h-16 rounded bg-red-300 '></div>
               <div>
                 <h4 className=' text-primary font-medium'>Specialized Program</h4>
                 <h3 className='text-xl font-semibold'>Web 3.0 (Blockchain) and Metaverse Specialization</h3>
               </div>
-            </div>
-            {/* Element 02 */}
-            <div className='flex  items-center gap-x-3'>
-              <div className='w-20 h-16 rounded bg-red-300 '></div>
-              <div>
-                <h4 className=' text-primary font-medium'>Specialized Program</h4>
-                <h3 className='text-xl font-semibold'>Web 3.0 (Blockchain) and Metaverse Specialization</h3>
-              </div>
-            </div>
+            </div> */}
+
           </div>
         </div>
+        {/* </div> */}
 
 
       </Wrapper>
-    </section>
+    </section >
   )
 }
 
